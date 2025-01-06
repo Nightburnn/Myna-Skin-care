@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalnia:wght@100..700&display=swap");
+.top-banner {
+  background: #fbbf24;
+  padding: 8px 0;
+  font-size: 14px;
+  position: relative;
+}
+.hey {
+  color: #1c1917;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.time {
+  color: #1c1917;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 5px;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.countdown {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 12px;
+}
+.time.dropping {
+  animation: dropAnimation 0.3s ease-out;
+}
+
+@keyframes dropAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Countdown digits styling */
+.countdown span {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  animation: none; 
+}
+
+.number-enter {
+  animation: dropIn 0.3s ease-out; 
+}
+
+.navbar {
+  padding: 0.5rem 0;
+  background-color: white;
+}
+
+.navbar-brand img {
+  height: 25px;
+}
+
+.navbar .navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--color-stone-900, #1c1917);
+  text-align: center;
+  -webkit-text-stroke-width: 0.5;
+  -webkit-text-stroke-color: var(--color-stone-900, #1c1917);
+  font-family: "Font Awesome 6 Free";
+  font-size: var(--font-size-lg, 18px);
+  font-style: normal;
+  font-weight: var(--font-weight-black, 900);
+  line-height: normal;
+}
+
+.hero-section {
+  height: 100vh;
+  position: relative;
+  background: url("../images/BG.png") no-repeat center;
+  background-size: cover; 
+}
+.nav-link {
+  color: #1c1917;
+  text-align: center;
+  font-feature-settings: "salt" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on;
+  font-family: "Geist";
+  font-size: var(--font-size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: normal;
+}
+
+.hero-content {
+  position: absolute;
+  right: 17%;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 500px; 
+  text-align: left; 
+}
+
+.featured-logos {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  margin-top: 1.5rem;
+}
+
+.featured-logos p {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size:16px;
+  font-style: normal;
+  font-weight:  500;
+  line-height: 5.13px; /* 32.063% */
+  letter-spacing:  0px;
+}
+
+.featured-logos img {
+  height: 20px; 
+  gap: 10px;
+}
+
+.nu {
+  color: #1c1917;
+  font-family: "Inter";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.chevron-down {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hero-title {
+  color:  #fff;
+  font-variant-numeric: ordinal;
+  font-feature-settings: "dlig" on;
+  font-family: "Kalnia";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 84px; /* 112% */
+  letter-spacing: -4.5px;
+}
+
+.hero-sub {
+  color: #fff;
+  font-family: "Geist";
+  font-size: 20px;
+  max-width: 400px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 145.455% */
+  letter-spacing: -0.4px;
+}
+.btn-warning {
+  color: #1c1917;
+  text-align: center;
+  font-family: "Geist";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  background: #fbbf24;
+  padding: 10px 32px;
+}
+.btn-outline-dark {
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 32px;
+  color: #1c1917;
+  text-align: center;
+  font-family: "Geist";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+
+    border-radius: 16px;
+  }
+  .hero-title {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -2px;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+
+  .featured-logos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .countdown {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .top-banner {
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+button {
+  outline: none;
+  border: none !important;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
